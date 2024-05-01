@@ -25,7 +25,7 @@ ul {
 	 justify-content: center;
 	 align-items: center;
 	 flex-direction: column;
-	 background: url('/01coding/assets/code.jpg');
+	 background: url('/assets/code.jpg');
 	 background-size: cover;
 }
  .header h1#intro {
