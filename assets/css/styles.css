@@ -90,8 +90,11 @@ ul {
  .section.timeline .content p:last-of-type {
 	 margin-bottom: 0px !important;
 }
+.section.banner {
+	max-width: none !important;
+}
 
- .banner {
+.banner {
 	 text-align: center;
 	 padding: 3rem;
 	 background: aliceblue;
