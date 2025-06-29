@@ -55,9 +55,6 @@ ul {
  .section .grid img:hover {
 	 filter: brightness(0.8);
 }
- .section.timeline {
-	 padding-top: 0px !important;
-}
  .section.timeline .nav {
 	 display: flex;
 	 align-items: center;
