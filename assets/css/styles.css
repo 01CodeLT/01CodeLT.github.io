@@ -1,141 +1,166 @@
 /* I usually use a CSS framework but didn't see the need, don't judge :) */
- body {
-	 margin: 0px;
-	 font-size: 1.1rem;
-	 line-height: 1.8rem;
-	 font-family: 'Roboto', sans-serif;
+body {
+	margin: 0px;
+	font-size: 1.1rem;
+	line-height: 1.8rem;
+	font-family: 'Roboto', sans-serif;
 }
- h1 {
-	 font-size: 3rem;
+
+h1 {
+	font-size: 3rem;
 }
- h2 {
-	 font-size: 1.8rem;
+
+h2 {
+	font-size: 1.8rem;
 }
+
 ul {
-	 padding-inline-start: 0px;
-}
- .fade-in-out {
-	 animation: fadeInOut 2s linear infinite forwards;
+	padding-inline-start: 0px;
 }
 
- .header {
-	 height: 100vh;
-	 width: 100%;
-	 display: flex;
-	 justify-content: center;
-	 align-items: center;
-	 flex-direction: column;
-	 background: url('/assets/code.jpg');
-	 background-size: cover;
-}
- .header h1#intro {
-	 color: #fff;
-}
- .header img {
-	 width: 10rem;
-	 height: 10rem;
-	 border-radius: 8rem;
-	 box-shadow: 0px 0px 15px 4px #000 e6;
+.fade-in-out {
+	animation: fadeInOut 2s linear infinite forwards;
 }
 
- .section {
-	 text-align: center;
-	 padding: 3rem;
-	 max-width: 900px;
-	 margin: auto;
+.header {
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background: url('/assets/code.jpg');
+	background-size: cover;
 }
- .section .grid {
-	 display: flex;
-	 gap: 15px;
-	 justify-content: center;
+
+.header h1#intro {
+	color: #fff;
 }
- .section .grid img {
-	 width: 2.5rem;
+
+.header img {
+	width: 10rem;
+	height: 10rem;
+	border-radius: 8rem;
+	box-shadow: 0px 0px 15px 4px #000 e6;
 }
- .section .grid img:hover {
-	 filter: brightness(0.8);
+
+.section {
+	text-align: center;
+	max-width: 900px;
+	margin: 4rem auto;
+	padding: 0 3rem;
 }
- .section.timeline .nav {
-	 display: flex;
-	 align-items: center;
-         justify-content: right;
+
+.section .grid {
+	display: flex;
+	gap: 15px;
+	justify-content: center;
 }
- .section.timeline .nav ul {
-	 text-align: center;
-	 list-style: none;
-	 min-width: 200px;
-	 line-height: 2.5rem;
+
+.section .grid img {
+	width: 2.5rem;
 }
- .section.timeline .nav ul li {
-	 width: fit-content;
-	 cursor: pointer;
-	 padding: 0px 15px;
+
+.section .grid img:hover {
+	filter: brightness(0.8);
 }
- .section.timeline .nav ul li.active {
-	 text-align: center;
-	 border-radius: 30px;
-	 background: aliceblue;
+
+.section.timeline .nav {
+	display: flex;
+	align-items: center;
+	justify-content: right;
 }
- .section.timeline .content {
-	 display: flex;
-	 text-align: left;
-	 align-items: center;
+
+.section.timeline .nav ul {
+	text-align: center;
+	list-style: none;
+	min-width: 200px;
+	line-height: 2.5rem;
 }
- .section.timeline .content div {
-	 display: none;
+
+.section.timeline .nav ul li {
+	width: fit-content;
+	cursor: pointer;
+	padding: 0px 15px;
 }
- .section.timeline .content div.active {
-	 display: block;
+
+.section.timeline .nav ul li.active {
+	text-align: center;
+	border-radius: 30px;
+	background: aliceblue;
 }
- .section.timeline .content p:last-of-type {
-	 margin-bottom: 0px !important;
+
+.section.timeline .content {
+	display: flex;
+	text-align: left;
+	align-items: center;
 }
+
+.section.timeline .content div {
+	display: none;
+}
+
+.section.timeline .content div.active {
+	display: block;
+}
+
+.section.timeline .content p:last-of-type {
+	margin-bottom: 0px !important;
+}
+
 .section.banner {
 	max-width: none !important;
 }
 
 .banner {
-	 text-align: center;
-	 padding: 3rem;
-	 background: aliceblue;
+	text-align: center;
+	padding: 3rem;
+	background: aliceblue;
 }
- .banner .chips {
-	 max-width: 900px;
-	 margin: auto;
+
+.banner .chips {
+	max-width: 900px;
+	margin: auto;
 }
- .banner .chips div {
-	 display: inline-block;
-	 background: #0078ff;
-	 border-radius: 30px;
-	 padding: 0px 8px;
-	 margin: 6px 0px 0px 6px;
-	 color: #fff;
-	 font-size: 0.9rem;
+
+.banner .chips div {
+	display: inline-block;
+	background: #0078ff;
+	border-radius: 30px;
+	padding: 0px 8px;
+	margin: 6px 0px 0px 6px;
+	color: #fff;
+	font-size: 0.9rem;
 }
 
 @media only screen and (max-width: 768px) {
-     .section.timeline .grid {
-         flex-direction: column;
-     }
-     .section.timeline .nav {
-	 justify-content: center;
-     }
-     .section.timeline .nav ul li {
-         float: left;
-     }
-     .section.timeline .content {
-	 text-align: center;
-     }
+	.section.timeline .grid {
+		flex-direction: column;
+	}
+
+	.section.timeline .nav {
+		justify-content: center;
+	}
+
+	.section.timeline .nav ul li {
+		float: left;
+	}
+
+	.section.timeline .content {
+		text-align: center;
+	}
 }
 
- @keyframes fadeInOut {
-	 0% {
-		 opacity: 0;
+@keyframes fadeInOut {
+	0% {
+		opacity: 0;
 	}
-	 50% {
-		 opacity: 1;
+
+	50% {
+		opacity: 1;
 	}
-	 100% {
-		 opacity: 0;
+
+	100% {
+		opacity: 0;
 	}
 }
